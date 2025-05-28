@@ -9,6 +9,8 @@ import Professional from "./service-items/professional";
 import Procurement from "./service-items/procurement";
 import Support from "./service-items/support";
 
+import CardGrid from "./card";
+
 interface ItemProps {
   name: string;
   image: string;
@@ -130,8 +132,11 @@ export default function ServicesPage() {
 
             <div className={"grid grid-cols-1 md:grid-cols-3 gap-6"}>
               {pageContent?.content &&
+                pageContent?.id === 1 &&
                 pageContent?.content.map((solution: any, index: any) => (
-                  <div key={index} className="bg-[#F4F4F4] p-6 rounded">
+                  <CardGrid key={index} {...solution} />
+                ))}
+              {/* <div key={index} className="bg-[#F4F4F4] p-6 rounded">
                     <h3 className="text-left font-medium mb-4">
                       {solution?.title}
                     </h3>
@@ -144,8 +149,32 @@ export default function ServicesPage() {
                       </div>
                     </div>
                   </div>
-                ))}
+                ))} */}
             </div>
+
+            {pageContent?.id === 5 && (
+              <>
+                <div className={"grid grid-cols-1 md:grid-cols-3 gap-6"}>
+                  {pageContent?.content &&
+                    pageContent?.id === 5 &&
+                    pageContent?.content.map((solution: any, index: any) => (
+                      <CardGrid key={index} {...solution} />
+                    ))}
+                </div>{" "}
+                <h2 className="text-xl font-semibold border-b-2 border-purple-900 pr-5 pb-3 mb-4">
+                  Our UC Features
+                </h2>
+                <p className="mb-6">
+                  We excel in a streamlined sourcing process by cultivating
+                  alliances with leading technology providers. This strategic
+                  network grants us priority access to cutting-edge solutions,
+                  innovations, and preferential pricing. Our ongoing
+                  relationship with top brands enables us to deliver diverse
+                  solutions, including Hardware & Software, Support &
+                  Maintenance.
+                </p>
+              </>
+            )}
 
             {pageContent?.id === 2 && <NetworkingSolutions />}
             {pageContent?.id === 3 && <Security />}
@@ -165,22 +194,7 @@ export default function ServicesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-7">
               {pageContent?.products &&
                 pageContent?.products.map((product, index) => (
-                  <div key={index} className="bg-[#F4F4F4] p-6 rounded">
-                    <Link href={product?.link}>
-                      {" "}
-                      <h3 className="text-left font-medium mb-4">
-                        {product.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 mb-4">
-                        {product.description}
-                      </p>
-                      <div className="flex justify-end">
-                        <div className="w-6 h-6 bg-black text-white flex items-center justify-center text-xs">
-                          →
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
+                  <CardGrid key={index} {...product} />
                 ))}
             </div>
           </div>

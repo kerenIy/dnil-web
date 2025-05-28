@@ -59,7 +59,7 @@ export default function ImportantNotices() {
 
       <div className="flex justify-center mt-8">
         <Link
-          href="/newsroom"
+          href="/services#newsletter"
           className="border-[#0A0045] border-[2px] rounded-[20px] text-[#0A0045] px-6 py-2 flex items-center justify-center"
         >
           View All{" "}

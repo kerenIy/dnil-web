@@ -65,22 +65,29 @@ export default function Navbar() {
               </svg>
               <span className="ml-2">Global / EN</span>
             </button>
-            <button className="text-[12px] flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+            <button className="text-[12px] ">
+              <a
+                href="mailto:info@dnilsolutions.com"
+                target="_blank"
+                className="flex items-center"
               >
-                <path d="M4 4h16v16H4z" />
-                <polyline points="4,4 12,13 20,4" />
-              </svg>
-              <span className="ml-2">Contact Us</span>
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M4 4h16v16H4z" />
+                  <polyline points="4,4 12,13 20,4" />
+                </svg>
+                <span className="ml-2">Contact Us</span>
+              </a>
             </button>
             <button className="text-[12px] flex items-center">
               <svg
@@ -133,7 +140,7 @@ export default function Navbar() {
               </DropdownNavItem>
             ))}
 
-            <Link href="/newsroom" className="nav-link">
+            <Link href="/services#newsletter" className="nav-link">
               Insights
             </Link>
           </div>
@@ -147,7 +154,9 @@ export default function Navbar() {
                 <span className="ml-1">Global / EN</span>
               </button>
               <button className="text-[12px] flex items-center">
-                <span className="ml-1">Contact Us</span>
+                <span className="ml-1">
+                  <a href="mailto:info@dnilsolutions.com">Contact Us</a>
+                </span>
               </button>
               <button className="text-[12px] flex items-center">
                 <span className="ml-1">Search</span>
@@ -190,7 +199,7 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              <Link href="/newsroom" className="nav-link">
+              <Link href="/services#newsletter" className="nav-link">
                 Insights
               </Link>
             </div>

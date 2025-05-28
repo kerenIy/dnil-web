@@ -72,7 +72,7 @@ export default function IndustryNews() {
                 {item.title}
               </h3>
               <div className="flex justify-end absolute bottom-4 right-5 bg-[#0C0C0C] text-white rounded-[4px] p-1">
-                <Link href={"/newsroom"} className="text-[#fff] ">
+                <Link href="/services#newsletter" className="text-[#fff] ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

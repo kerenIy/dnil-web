@@ -67,7 +67,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/newsroom"
+                  href="/services#newsletter"
                   className="text-[#151515] hover:text-[#0a2463]"
                 >
                   Newsletter
@@ -123,16 +123,23 @@ export default function Footer() {
                 />
               </Link>
               <Link
-                href="https://facebook.com"
-                className="text-gray-600 hover:text-[#0a2463]"
+                href="mailto:info@dnilsolutions.com"
+                className="text-gray-600 hover:text-[#0a2463] mt-1"
               >
-                <Image
-                  src={"/company/social-three.svg"}
-                  width={25}
-                  height={25}
-                  alt="Twitter"
-                  className="mt-1"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M4 4h16v16H4z" />
+                  <polyline points="4,4 12,13 20,4" />
+                </svg>
               </Link>
             </div>
 

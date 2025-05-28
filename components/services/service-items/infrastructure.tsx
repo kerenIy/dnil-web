@@ -1,6 +1,9 @@
 import React from "react";
+import { sidebarItems } from "@/lib/compant-links";
+import CardGrid from "../card";
 
 const NetworkingSolutions = () => {
+  const items = sidebarItems[1].content;
   return (
     <div className="max-w-5xl mx-auto font-sans text-[#0C0C0C]">
       {/* LAN Structured Cabling */}
@@ -13,7 +16,9 @@ const NetworkingSolutions = () => {
         </p>
 
         <div>
-          <h3 className="text-base font-semibold mb-4">Service Offerings</h3>
+          <h3 className="text-xl font-semibold mb-4 border-b-2 border-purple-900 pb-3 pr-5">
+            Service Offerings
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
               "Structured cabling for new builds and renovations",
@@ -25,7 +30,7 @@ const NetworkingSolutions = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="border border-gray-300 p-3 rounded shadow-sm"
+                className="border border-gray-300 p-3 rounded shadow-sm text-center"
               >
                 {item}
               </div>
@@ -36,7 +41,7 @@ const NetworkingSolutions = () => {
 
       {/* Networking Solutions */}
       <section>
-        <h2 className="text-xl font-semibold border-b-2 border-purple-900 pb-1 mb-4">
+        <h2 className="text-xl font-semibold border-b-2 border-purple-900 pr-5 pb-3 mb-4">
           Networking Solutions
         </h2>
 
@@ -50,23 +55,30 @@ const NetworkingSolutions = () => {
             security—while lowering operational costs
           </p>
 
-          <h4 className="text-lg font-semibold mb-4">Key Features</h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {[
-              "Centralized network management",
-              "Real-time, application-aware traffic routing",
-              "Support for MPLS, broadband, and 4G/5G",
-              "Integration with firewalls, VPNs, and SASE",
-              "Performance optimization for SaaS and IaaS",
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="border border-gray-300 p-4 rounded shadow-sm"
-              >
-                {feature}
-              </div>
-            ))}
+          <h4 className="text-xl font-semibold mb-4 border-b-2 border-purple-900  pr-5 pb-3">
+            Key Features
+          </h4>
+          <div className={"grid grid-cols-1 md:grid-cols-3 gap-6"}>
+            {items &&
+              items.map((solution: any, index: any) => (
+                <CardGrid key={index} {...solution} />
+              ))}
           </div>
+        </div>
+        <h2 className="text-xl font-semibold border-b-2 border-purple-900 pr-5 pb-3 mb-4">
+          Data Centers
+        </h2>
+
+        <div>
+          <h3 className="text-lg font-bold mb-2">Data Center Solutions</h3>
+          <p className="mb-6">
+            Data Center is the heart IT operations, from users’ information,
+            data to storage devices and the World Wide Web. At DNIL we Design,
+            build, upgrade, Data centers to ensure they areavailable, safe and
+            secure. Our DC Services include physical building, Prefabricated
+            Modular Data Centers, Power, Precision Cooling systems,
+            environmental monitoring and building Management Systems
+          </p>
         </div>
       </section>
     </div>

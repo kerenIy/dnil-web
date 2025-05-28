@@ -241,6 +241,33 @@ export const sidebarItems = [
     image: "/services/services-two.jpg",
     description: "Find everything you need for your digital transformation.",
     subtitle: "LAN Structured Cabling",
+    content: [
+      {
+        title: "Centralized network management",
+        description:
+          "SD-WAN systems are managed centrally, providing a single point of control for the entire WAN infrastructure.",
+      },
+      {
+        title: "Real-time, application-aware traffic routing",
+        description:
+          "SD-WAN can dynamically route traffic across different network paths based on factors like network performance, application requirements, and business policies.",
+      },
+      {
+        title: "Support for MPLS, broadband, and 4G/5G",
+        description:
+          "SD-WAN can utilize various transport connections like MPLS, broadband internet, and even cellular networks, allowing for greater flexibility and cost savings.",
+      },
+      {
+        title: "Integration with firewalls, VPNs, and SASE",
+        description:
+          "SD-WAN can integrate with security services like firewalls and VPNs to protect data in transit.",
+      },
+      {
+        title: "Performance optimization for SaaS and IaaS",
+        description:
+          "SD-WAN can prioritize and optimize traffic for specific applications, ensuring a better user experience.",
+      },
+    ],
     // products: [
     //   {
     //     title: "AnkurBot",
@@ -280,7 +307,7 @@ export const sidebarItems = [
     name: "Professional Consultancy",
     image: "/services/services-four.jpg",
     description: "Find everything you need for your digital transformation.",
-    subtitle: "Consultancy",
+    subtitle: "Consultancy Overview",
     // products: [
     //   {
     //     title: "AnkurBot",
@@ -377,7 +404,7 @@ export const sidebarItems = [
     name: "Support, Managed Services & Project Management (SMP)",
     image: "/services/services-seven.jpg",
     description: "Find everything you need for your digital transformation.",
-    subtitle: "Digital Solutions",
+    subtitle: "SMP Overview",
     // products: [
     //   {
     //     title: "AnkurBot",

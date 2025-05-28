@@ -17,6 +17,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* <script
+          src="https://chatbot.ankursolutions.com/widget.js"
+          data-name="DNILBot"
+          data-token="gAAAAABoNXl6Ptb78SFMAdRohLEgRFHVAINWHWhfLsT1Qwbe7xyzC4YoidSS1uBiIROEGR5c3-wxcz3gPXFj64UtAEmui-EoM2RmftWJ3N4O1QS_2BXFB4c=--gAAAAABoNXl6_e1dbd5gSc9uiiX58wHjOwcdPCllE_rnGXTjF8qc2YoJtGLhSqHSs0XeIW7-16txbMPjeYcFcriE00g4RYH9-Q==--gAAAAABoNXl6eG8S7_V1oXnHD4B_aJFdhXwKgZzlWLhf9vSgJMCTaZMBXzrD7HkQ6dJ-zA0N-_cXxK5X1dr67LDWprtQz5hfZPyrrHf0AUuONsA0vZOnkC8="
+          data-icon=""
+          data-color=""
+        ></script> */}
+      </head>
       <body className={`${noto_sans.className} overflow-x-hidden bg-white`}>
         <AOSProvider>
           {children}

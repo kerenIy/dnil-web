@@ -10,8 +10,9 @@ export default function GetInTouch() {
       <div className=" py-16 px-6 text-center">
         <h2 className="font-bold text-[43px] text-white">Get in touch</h2>
         <p className="font-normal text-white text-[20px] leading-[32px] max-w-[600px]">
-          For all enquiries and queries, send us a message info@DNIL.com or call
-          our help desk. Visit our contact page for more contact details.
+          For all enquiries and queries, send us a message
+          info@dnilsolutions.com or call our help desk. Visit our contact page
+          for more contact details.
         </p>
         <button className="bg-[#5A8CFD] rounded-[5px] px-[12px] py-[6px] capitalize my-6">
           <Link href={"/contact"}>contact us</Link>

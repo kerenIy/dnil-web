@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function IndustriesServed() {
   return (
-    <section className="relative">
+    <section className="relative" id="newsletter">
       <Image
         src="/world.jpg"
         alt="Industries Served"

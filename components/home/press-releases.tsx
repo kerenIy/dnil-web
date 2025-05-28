@@ -41,7 +41,7 @@ export default function PressReleases() {
                     </h3>
                   </div>
                   <Link
-                    href={"/newsroom"}
+                    href="/services#newsletter"
                     className="text-[#fff] flex-shrink-0 bg-[#0C0C0C] p-[3px] rounded-[4px]"
                   >
                     <svg

@@ -6,9 +6,12 @@ const Procurement = () => {
       {/* LAN Structured Cabling */}
       <section className="mb-12">
         <p className="mb-6">
-          Through strategic partnerships with leading OEMs, we provide direct
-          access to the latest hardware, software, and licenses, at competitive
-          prices.
+          We excel in a streamlined sourcing process by cultivating alliances
+          with leading technology providers. This strategic network grants us
+          priority access to cutting-edge solutions, innovations, and
+          preferential pricing. Our ongoing relationship with top brands enables
+          us to deliver diverse solutions, including Hardware & Software,
+          Support & Maintenance.
         </p>
 
         <div>

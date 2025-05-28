@@ -77,7 +77,9 @@ export default function Navbar() {
                 <path d="M4 4h16v16H4z" />
                 <polyline points="4,4 12,13 20,4" />
               </svg>
-              <span className="ml-2">Contact Us</span>
+              <span className="ml-2">
+                <a href="mailto:info@dnilsolutions.com">Contact Us</a>
+              </span>
             </button>
             <button className="flex items-center">
               <svg
@@ -169,7 +171,9 @@ export default function Navbar() {
                     <path d="M4 4h16v16H4z" />
                     <polyline points="4,4 12,13 20,4" />
                   </svg>
-                  <span className="ml-1">Contact Us</span>
+                  <span className="ml-1">
+                    <a href="mailto:info@dnilsolutions.com">Contact Us</a>
+                  </span>
                 </button>
                 <button className="ml-2 text-[12px] flex items-center">
                   <svg
