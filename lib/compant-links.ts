@@ -58,11 +58,11 @@ export const serviceLinks = [
     subtitle: "Expert advice to drive your IT strategy forward",
     href: "/services",
   },
-  {
-    title: "Product Lab & Venture Studio",
-    subtitle: "Innovating and building future-ready digital products",
-    href: "/services",
-  },
+  // {
+  //   title: "Product Lab & Venture Studio",
+  //   subtitle: "Innovating and building future-ready digital products",
+  //   href: "/services",
+  // },
   {
     title: "Technology Procurement & Outsourcing",
     subtitle: "Smart tech sourcing and outsourcing solutions",
