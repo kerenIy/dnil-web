@@ -271,7 +271,7 @@ const aboutLinks = [
   {
     title: "News & Insights",
     image: "/news-insights.jpg",
-    href: "/news",
+    href: "/services#newsletter",
   },
   {
     title: "Our Partners",
