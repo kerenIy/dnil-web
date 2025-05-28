@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"
+    <html lang="en" >
       <body className={`${noto_sans.className} overflow-x-hidden bg-white`}>
   <Script
     src="https://chatbot.ankursolutions.com/widget.js"
