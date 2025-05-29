@@ -26,7 +26,9 @@ export default function RootLayout({
           data-color=""
         ></script>
       </head>
-      <body className={`${noto_sans.className} overflow-x-hidden bg-white`}>
+      <body
+        className={`${noto_sans.className} ${noto_sans.variable} ${noto_sans.style} overflow-x-hidden bg-white`}
+      >
         <AOSProvider>
           {children}
           <Footer />

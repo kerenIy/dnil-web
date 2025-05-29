@@ -76,7 +76,7 @@ export default function ServicesPage() {
       {/* Main content with sidebar */}
       <div className="flex flex-col md:flex-row gap-8">
         {/* Sidebar */}
-        <div className="w-full md:w-64 flex-shrink-0">
+        <div className="hidden lg:inline w-full md:w-64 flex-shrink-0">
           {sidebarItems.map((item) => (
             <li
               key={item.id}
@@ -95,6 +95,22 @@ export default function ServicesPage() {
 
               <span className="ml-3">{item.name}</span>
             </li>
+          ))}
+        </div>
+
+        <div className="lg:hidden overflow-x-auto whitespace-nowrap flex gap-4 pb-4">
+          {sidebarItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => handleTabClick(item.id, item)}
+              className={`${
+                item.id === activeTab
+                  ? "bg-[#0A0045] text-white w-fit"
+                  : "bg-[#F4F4F4] text-[#0C0C0C] w-fit"
+              } px-4 py-2 rounded-full text-sm whitespace-nowrap`}
+            >
+              {item.name}
+            </button>
           ))}
         </div>
 

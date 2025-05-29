@@ -10,16 +10,16 @@ export default function ProductsSolutions() {
   const [tabName, setTabName] = useState<any>({
     id: 1,
     name: "Software Solutions",
-    image: "/products.jpg",
+    image: "/products.jpeg",
     description: "Find everything you need for your digital transformation.",
     subtitle: "Digital Solutions",
   });
   const [activeTab, setActiveTab] = useState(1);
 
-  const handleTabClick = (id: number, tab: any) => {
-    setTab(id);
+  const handleTabClick = (tab: any) => {
+    setTab(tab?.id);
     setTabName(tab);
-    setActiveTab(id);
+    setActiveTab(tab?.id);
   };
 
   console.log(tab);
@@ -50,7 +50,7 @@ export default function ProductsSolutions() {
                     ? "bg-[#0A0045] text-white"
                     : "text-[#0C0C0C]"
                 } font-normal text-[16px] leading-[22px] tracking-[0%] rounded-[2px] px-2 py-2 my-1 flex items-center w-[300px] cursor-pointer`}
-                onClick={() => handleTabClick(item.id, item)}
+                onClick={() => handleTabClick(item)}
               >
                 <div
                   className={`${
@@ -84,7 +84,7 @@ export default function ProductsSolutions() {
                   href="/services"
                   className="text-[#0C0C0C] flex items-center text-[16px] mb-4"
                 >
-                  <span>Digital Solutions</span>
+                  <span>{tabName?.subtitle}</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -101,7 +101,7 @@ export default function ProductsSolutions() {
                   </svg>
                 </Link>
 
-                <Link
+                {/* <Link
                   href="/services"
                   className="text-[#0C0C0C] flex items-center text-[16px]"
                 >
@@ -120,7 +120,7 @@ export default function ProductsSolutions() {
                       d="M8.25 4.5l7.5 7.5-7.5 7.5"
                     />
                   </svg>
-                </Link>
+                </Link> */}
               </div>
 
               <div className="relative h-64">
@@ -145,7 +145,7 @@ export default function ProductsSolutions() {
           {sidebarItems.map((item) => (
             <button
               key={item.id}
-              onClick={() => handleTabClick(item.id, item.name)}
+              onClick={() => handleTabClick(item)}
               className={`${
                 item.id === activeTab
                   ? "bg-[#0A0045] text-white w-fit"
@@ -169,7 +169,7 @@ export default function ProductsSolutions() {
             href="/services"
             className="text-[#0C0C0C] flex items-center text-[15px] mb-2"
           >
-            <span>Digital Solutions</span>
+            <span>{tabName?.subtitle}</span>
             <svg
               className="w-4 h-4 ml-1"
               fill="none"
@@ -185,7 +185,7 @@ export default function ProductsSolutions() {
             </svg>
           </Link>
 
-          <Link
+          {/* <Link
             href="/services"
             className="text-[#0C0C0C] flex items-center text-[15px]"
           >
@@ -203,7 +203,7 @@ export default function ProductsSolutions() {
                 d="M8.25 4.5l7.5 7.5-7.5 7.5"
               />
             </svg>
-          </Link>
+          </Link> */}
 
           <div className="relative h-48 mt-4">
             <img

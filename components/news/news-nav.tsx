@@ -9,10 +9,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
+  const [showLanguage, setShowLanguage] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 bg-white">
       <div className="">
-        <div className="flex justify-between items-center mx-[5%] md:mx-[10%] py-2 text-black font-normal text-[15px] leading-[24.41px]">
+        <div className="flex justify-between items-center mx-[5%] md:mx-[10%] py-2 text-black font-normal text-[15px] leading-[24.41px] relative">
           <div className="flex justify-between items-center">
             <Image
               src="/dnil.png"
@@ -45,7 +47,10 @@ export default function Navbar() {
           </button>
 
           <div className="hidden md:flex items-center space-x-4 ml-6">
-            <button className="flex items-center">
+            <button
+              className="flex items-center"
+              onClick={() => setShowLanguage(!showLanguage)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

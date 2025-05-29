@@ -5,10 +5,12 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { CompanyDropdown } from "./nav-dropdown";
 import { ServicesDropdown } from "./services-dropdown";
+import GoogleTranslate from "./google-translate";
 // import { IndustriesDropdown } from "./industry";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showLanguage, setShowLanguage] = useState(false);
   const router = useRouter();
 
   return (
@@ -46,9 +48,12 @@ export default function Navbar() {
             </svg>
           </button>
 
-          <div className="hidden md:flex items-center space-x-4 ml-6">
+          <div className="hidden md:flex items-center space-x-4 ml-6 relative">
             {/* Icons here (language, contact, search) */}
-            <button className="text-[12px] flex items-center">
+            <button
+              className="text-[12px] flex items-center"
+              onClick={() => setShowLanguage(!showLanguage)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -65,6 +70,16 @@ export default function Navbar() {
               </svg>
               <span className="ml-2">Global / EN</span>
             </button>
+
+            {showLanguage && (
+              <div
+                className="absolute top-full mt-2 z-50 bg-white shadow-md border rounded"
+                onClick={() => setShowLanguage(false)}
+              >
+                <GoogleTranslate />
+              </div>
+            )}
+
             <button className="text-[12px] ">
               <a
                 href="mailto:info@dnilsolutions.com"
@@ -148,11 +163,20 @@ export default function Navbar() {
 
         {/* Mobile Nav */}
         {isOpen && (
-          <div className="md:hidden bg-white shadow-md py-4 px-4 text-black">
+          <div className="md:hidden bg-white shadow-md py-4 px-4 text-black relative">
             <nav className="text-[13px] flex flex-col space-y-4">
-              <button className="text-[12px] flex items-center">
+              <button
+                className="text-[12px] flex items-center"
+                onClick={() => setShowLanguage(true)}
+              >
                 <span className="ml-1">Global / EN</span>
               </button>
+
+              {showLanguage && (
+                <div className="absolute top-full mt-2 z-50 bg-white shadow-md border rounded">
+                  <GoogleTranslate />
+                </div>
+              )}
               <button className="text-[12px] flex items-center">
                 <span className="ml-1">
                   <a href="mailto:info@dnilsolutions.com">Contact Us</a>

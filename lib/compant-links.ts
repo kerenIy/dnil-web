@@ -134,7 +134,7 @@ export const corporateLinks = [
   {
     title: "Case Studies",
     image: "/about-organization.png",
-    link: "/about-us/structure",
+    link: "/case-studies/euracare",
   },
   {
     title: "Industry Verticals",
