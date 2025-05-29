@@ -18,15 +18,15 @@ export default function IndustriesServed() {
           <div className="absolute bg-white opacity-90 rounded-[6px] bottom-[10px] md:bottom-[140px] right-[9%]">
             <div className="border-[#B3B3B3] border rounded-[6px] backdrop-blur-md p-3 md:p-6 max-w-[310px] md:max-w-[518px] relative z-1000">
               <h2 className="section-title font-bold text-[#0C0C0C] text-[19px] md:text-[31.5px] leading-[30px] md:leading-[40px] tracking-[0%]">
-                Industries Served
+                Case Studies
               </h2>
               <p className="my-2 md:my-6 font-normal text-[#0C0C0C] text-[13px] md:text-[16px] leading-[24px] tracking-[0%]">
-                Search for companies by region or industry.
+                See various case studies across several industries
               </p>
 
               <button className="bg-[#0A0045] px-3 md:px-6 py-1 md:py-2 text-white  rounded-[14px] md:rounded-[20px] text-[13px] md:text-[16px] flex item-center w-fit">
                 <Link
-                  href="/about-us#services"
+                  href="/case-studies/dbn"
                   className="bg-[#0A0045] rounded-[14px] md:rounded-[20px] flex justify-start items-start text-white"
                 >
                   See All

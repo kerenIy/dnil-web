@@ -76,11 +76,7 @@ export default function DnilGlance() {
           </div>
         </div>
 
-        <div
-          className="mt-4 md:mt-0 relative md:ml-6"
-          data-aos="fade-up"
-          data-aos-once="false"
-        >
+        <div className="mt-4 md:mt-0 relative md:ml-6">
           <Image
             src="/top-careers.jpg"
             alt="DNIL team members"
