@@ -347,7 +347,7 @@ export const sidebarItems = [
     name: "Unified Communication Solutions",
     image: "/services/services-five.jpg",
     description: "Find everything you need for your digital transformation.",
-    subtitle: "Digital Solutions",
+    subtitle: "Communication Solutions",
     content: [
       {
         title: "IP Telephony",
@@ -384,7 +384,7 @@ export const sidebarItems = [
     name: "Technology Procurement",
     image: "/services/services-six.jpg",
     description: "Find everything you need for your digital transformation.",
-    subtitle: "Digital Solutions",
+    subtitle: "Procurement",
     // products: [
     //   {
     //     title: "AnkurBot",

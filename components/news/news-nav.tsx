@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
-  const [showLanguage, setShowLanguage] = useState(false);
+  // const [showLanguage, setShowLanguage] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white">
@@ -47,7 +47,7 @@ export default function Navbar() {
           </button>
 
           <div className="hidden md:flex items-center space-x-4 ml-6">
-            <button
+            {/* <button
               className="flex items-center"
               onClick={() => setShowLanguage(!showLanguage)}
             >
@@ -66,7 +66,7 @@ export default function Navbar() {
                 />
               </svg>
               <span className="ml-2">Global / EN</span>
-            </button>
+            </button> */}
             <button className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +151,7 @@ export default function Navbar() {
           <div className="md:hidden bg-white shadow-md py-4 px-4 text-[#000000]">
             <nav className="text-[13px] flex flex-col space-y-4">
               <div className="flex items-center">
-                <button className="text-[12px] flex items-center">
+                {/* <button className="text-[12px] flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -167,11 +167,11 @@ export default function Navbar() {
                     />
                   </svg>
                   <span className="ml-1">Global / EN</span>
-                </button>
+                </button> */}
                 <button className="ml-2 text-[12px] flex items-center">
                   Contact Us
                 </button>
-                <button className="ml-2 text-[12px] flex items-center">
+                {/* <button className="ml-2 text-[12px] flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -187,7 +187,7 @@ export default function Navbar() {
                     />
                   </svg>
                   <span className="ml-1">Search</span>
-                </button>
+                </button> */}
               </div>
               <Link
                 href="/about-us#corporate-information"
@@ -198,12 +198,12 @@ export default function Navbar() {
               <Link href="/services" className="nav-link flex items-center">
                 Services & Solutions
               </Link>
-              <Link
+              {/* <Link
                 href="/services#newsletter"
                 className="nav-link flex items-center"
               >
                 News Releases
-              </Link>
+              </Link> */}
               <Link
                 href="/company/search-jobs"
                 className="nav-link flex items-center"

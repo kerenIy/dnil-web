@@ -45,7 +45,7 @@ export default function CaseStudyPage({
       subtitle: "",
       image: "/case-studies/lseft2.png",
       category: "Government",
-      link: "/case-studies/lseft",
+      link: "/case-studies/lsetf",
     },
     {
       id: "3",

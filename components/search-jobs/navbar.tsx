@@ -4,13 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { useRouter } from "next/navigation";
-import GoogleTranslate from "../global/google-translate";
+// import GoogleTranslate from "../global/google-translate";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
-  const [showLanguage, setShowLanguage] = useState(false);
+  // const [showLanguage, setShowLanguage] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white">
@@ -48,7 +48,7 @@ export default function Navbar() {
           </button>
 
           <div className="hidden md:flex items-center space-x-4 ml-6 relative">
-            <button
+            {/* <button
               className="flex items-center"
               onClick={() => setShowLanguage(!showLanguage)}
             >
@@ -76,7 +76,7 @@ export default function Navbar() {
               >
                 <GoogleTranslate />
               </div>
-            )}
+            )} */}
             <button className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ export default function Navbar() {
                 <a href="mailto:info@dnilsolutions.com">Contact Us</a>
               </span>
             </button>
-            <button className="flex items-center">
+            {/* <button className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -112,7 +112,7 @@ export default function Navbar() {
                 />
               </svg>
               <span className="ml-2">Search</span>
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -154,7 +154,7 @@ export default function Navbar() {
           <div className="md:hidden bg-white shadow-md py-4 px-4 text-[#000000]">
             <nav className="text-[13px] flex flex-col space-y-4">
               <div className="flex items-center">
-                <button
+                {/* <button
                   className="text-[12px] flex items-center"
                   onClick={() => setShowLanguage(true)}
                 >
@@ -168,15 +168,15 @@ export default function Navbar() {
                   >
                     <GoogleTranslate />
                   </div>
-                )}
+                )} */}
                 <button className="ml-2 text-[12px] flex items-center">
                   <span className="ml-1">
                     <a href="mailto:info@dnilsolutions.com">Contact Us</a>
                   </span>
                 </button>
-                <button className="ml-2 text-[12px] flex items-center">
+                {/* <button className="ml-2 text-[12px] flex items-center">
                   <span className="ml-1">Search</span>
-                </button>
+                </button> */}
               </div>
               <Link
                 href="/company/search-jobs"

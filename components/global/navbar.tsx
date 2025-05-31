@@ -5,12 +5,12 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { CompanyDropdown } from "./nav-dropdown";
 import { ServicesDropdown } from "./services-dropdown";
-import GoogleTranslate from "./google-translate";
+// import GoogleTranslate from "./google-translate";
 // import { IndustriesDropdown } from "./industry";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [showLanguage, setShowLanguage] = useState(false);
+  // const [showLanguage, setShowLanguage] = useState(false);
   const router = useRouter();
 
   return (
@@ -50,7 +50,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center space-x-4 ml-6 relative">
             {/* Icons here (language, contact, search) */}
-            <button
+            {/* <button
               className="text-[12px] flex items-center"
               onClick={() => setShowLanguage(!showLanguage)}
             >
@@ -69,16 +69,16 @@ export default function Navbar() {
                 />
               </svg>
               <span className="ml-2">Global / EN</span>
-            </button>
+            </button> */}
 
-            {showLanguage && (
+            {/* {showLanguage && (
               <div
                 className="absolute top-full mt-2 z-50 bg-white shadow-md border rounded"
                 onClick={() => setShowLanguage(false)}
               >
                 <GoogleTranslate />
               </div>
-            )}
+            )} */}
 
             <button className="text-[12px] ">
               <a
@@ -104,7 +104,7 @@ export default function Navbar() {
                 <span className="ml-2">Contact Us</span>
               </a>
             </button>
-            <button className="text-[12px] flex items-center">
+            {/* <button className="text-[12px] flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -120,7 +120,7 @@ export default function Navbar() {
                 />
               </svg>
               <span className="ml-2">Search</span>
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -158,6 +158,9 @@ export default function Navbar() {
             <Link href="/services#newsletter" className="nav-link">
               Insights
             </Link>
+            <Link href="/case-studies/lsetf" className="nav-link">
+              Case Studies
+            </Link>
           </div>
         </div>
 
@@ -165,7 +168,7 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden bg-white shadow-md py-4 px-4 text-black relative">
             <nav className="text-[13px] flex flex-col space-y-4">
-              <button
+              {/* <button
                 className="text-[12px] flex items-center"
                 onClick={() => setShowLanguage(true)}
               >
@@ -176,15 +179,15 @@ export default function Navbar() {
                 <div className="absolute top-full mt-2 z-50 bg-white shadow-md border rounded">
                   <GoogleTranslate />
                 </div>
-              )}
+              )} */}
               <button className="text-[12px] flex items-center">
                 <span className="ml-1">
                   <a href="mailto:info@dnilsolutions.com">Contact Us</a>
                 </span>
               </button>
-              <button className="text-[12px] flex items-center">
+              {/* <button className="text-[12px] flex items-center">
                 <span className="ml-1">Search</span>
-              </button>
+              </button> */}
             </nav>
 
             <div className="ml-1 text-[12px]">
@@ -225,6 +228,10 @@ export default function Navbar() {
 
               <Link href="/services#newsletter" className="nav-link">
                 Insights
+              </Link>
+
+              <Link href="/case-studies/lsetf" className="nav-link">
+                Case Studies
               </Link>
             </div>
           </div>
