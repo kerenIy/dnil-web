@@ -15,8 +15,13 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white">
+      <div className="text-black font-bold text-[28px] mx-4">
+        <p className="hidden 3xl:inline 4xl:hidden">3xl</p>
+        <p className="hidden 2xl:inline 3xl:hidden">2xl</p>
+        <p className="hidden 4xl:inline">4xl</p>
+      </div>
       <div>
-        <div className="flex justify-between items-center mx-[5%] md:mx-[10%] py-2 text-black font-normal text-[15px] leading-[24.41px]">
+        <div className="flex justify-between items-center mx-[5%] md:mx-[10%] 2xl:mx-[5%] py-2 text-black font-normal text-[15px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[22px] 4xl:text-[27px] leading-[24.41px]">
           <div className="flex justify-between items-center">
             <Image
               src="/dnil.png"
@@ -80,7 +85,7 @@ export default function Navbar() {
               </div>
             )} */}
 
-            <button className="text-[12px] ">
+            <button className="text-[12px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[24px] 4xl:text-[27px]">
               <a
                 href="mailto:info@dnilsolutions.com"
                 target="_blank"
@@ -97,11 +102,12 @@ export default function Navbar() {
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  className="2xl:w-[18px] 3xl:w-[20px] "
                 >
                   <path d="M4 4h16v16H4z" />
                   <polyline points="4,4 12,13 20,4" />
                 </svg>
-                <span className="ml-2">Contact Us</span>
+                <span className="ml-2 ">Contact Us</span>
               </a>
             </button>
             {/* <button className="text-[12px] flex items-center">
@@ -125,8 +131,8 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav with Hover Dropdowns */}
-        <div className="hidden md:flex justify-end items-end bg-[#F4F4F4] py-4 w-full px-[10%]">
-          <div className="flex text-black font-normal text-[15px] leading-[24.41px] space-x-6 relative">
+        <div className="hidden md:flex justify-end items-end bg-[#F4F4F4] py-4 w-full px-[10%] 2xl:px-[5%]">
+          <div className="flex text-black font-normal text-[15px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[24px] 4xl:text-[29px] leading-[24.41px] space-x-6 relative">
             {[
               {
                 label: "Company",

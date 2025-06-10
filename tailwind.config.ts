@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        "3xl": "1920px", // for large desktop monitors
+        "4xl": "2560px", // for ultra-wide monitors or 4K
+      },
     },
   },
   plugins: [],

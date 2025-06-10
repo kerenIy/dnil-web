@@ -25,9 +25,9 @@ export default function ProductsSolutions() {
   console.log(tab);
 
   return (
-    <section className="py-[80px] container overflow-y-hidden overflow-x-hidden px-[10%] mx-auto">
+    <section className="py-[80px] container overflow-y-hidden overflow-x-hidden px-[10%] 2xl:px-[5%] 3xl:px-[9%] 4xl:px-[5%] 2xl:mx-auto">
       <h2
-        className="section-title text-[#0C0C0C] font-bold text-[31.75px] my-5 leading-[40px]"
+        className="section-title text-[#0C0C0C] font-bold text-[31.75px] 2xl:text-[37px] 3xl:text-[45px] 4xl:text-[57px] my-5 leading-[40px]"
         data-aos="fade-up"
         data-aos-once="false"
       >
@@ -49,13 +49,13 @@ export default function ProductsSolutions() {
                   item?.id === activeTab
                     ? "bg-[#0A0045] text-white"
                     : "text-[#0C0C0C]"
-                } font-normal text-[16px] leading-[22px] tracking-[0%] rounded-[2px] px-2 py-2 my-1 flex items-center w-[300px] cursor-pointer`}
+                } font-normal text-[16px] 2xl:text-[20px] 3xl:text-[26px] 4xl:text-[32px] leading-[22px] 2xl:leading-[25px] 3xl:leading-[29px] 4xl:leading-[34px] tracking-[0%] rounded-[2px] px-2 py-2 my-1 flex items-center w-[300px] 2xl:w-[400px] 3xl:w-[500px] 4xl:w-[500px] cursor-pointer`}
                 onClick={() => handleTabClick(item)}
               >
                 <div
                   className={`${
                     item?.id === activeTab ? "bg-[#fff]" : "bg-[#0C0C0C]"
-                  } w-[3px] h-[21px] rounded-[2px]`}
+                  } w-[3px] h-[21px] 2xl:w-[4px] 2xl:h-[26px] 3xl:w-[6px] 3xl:h-[32px] 4xl:w-[8px] 4xl:h-[38px] rounded-[2px]`}
                 ></div>
                 <span className="ml-3">{item.name}</span>
               </li>
@@ -64,17 +64,17 @@ export default function ProductsSolutions() {
         </div>
 
         <div
-          className="md:ml-[40px]"
+          className="md:ml-[40px] 2xl:ml-[60px] 3xl:ml-[80px] 4xl:ml-[100px]"
           data-aos="slide-left"
           data-aos-once="false"
         >
           <div className=" bg-[#F4F4F4] p-9">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-[24px] text-[#0C0C0C] leading-[35px] font-normal mb-3 underline">
+                <h3 className="text-[24px] 2xl:text-[28px] 3xl:text-[32px] 4xl:text-[38px] text-[#0C0C0C] leading-[35px] font-normal mb-3 underline">
                   {tabName?.name}
                 </h3>
-                <p className="text-[16px] text-[#0C0C0C] font-normal mb-4 max-w-[400px]">
+                <p className="text-[16px] 2xl:text-[19px] 3xl:text-[24px] 4xl:text-[28px] text-[#0C0C0C] font-normal mb-4 max-w-[400px]">
                   Find everything you need for your digital transformation.
                 </p>
 
@@ -82,7 +82,7 @@ export default function ProductsSolutions() {
 
                 <Link
                   href="/services"
-                  className="text-[#0C0C0C] flex items-center text-[16px] mb-4"
+                  className="text-[#0C0C0C] flex items-center text-[16px] 2xl:text-[19px] 3xl:text-[22px] 4xl:text-[26px] mb-4"
                 >
                   <span>{tabName?.subtitle}</span>
                   <svg
@@ -123,7 +123,7 @@ export default function ProductsSolutions() {
                 </Link> */}
               </div>
 
-              <div className="relative h-64">
+              <div className="relative h-64 2xl:h-[19rem] 3xl:h-[21rem] 4xl:h-[24rem]">
                 <img
                   src={tabName?.image || "/products.jpeg"}
                   alt={tabName?.name}

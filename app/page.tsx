@@ -16,7 +16,7 @@ export default function Home() {
     <main className="bg-white">
       <Navbar />
       <Hero />
-      <IndustryNews />
+      {/* <IndustryNews /> */}
       <AboutUs />
       <ProductsSolutions />
       <CoreValues />

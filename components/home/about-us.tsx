@@ -15,16 +15,16 @@ export default function AboutUs() {
       </div>
 
       <div
-        className="py-16 relative z-10 container mx-auto px-[10%]"
+        className="py-16 relative z-10 container mx-auto px-[10%] 2xl:px-[5%] 3xl:px-[9%] 4xl:px-[5%]"
         data-aos="fade-up"
         data-aos-once="false"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 items-center">
           <div className="">
-            <h2 className="section-title text-[#0C0C0C] font-normal text-[32px]">
+            <h2 className="section-title text-[#0C0C0C] font-normal text-[32px] 2xl:text-[37px] 3xl:text-[45px] 4xl:text-[57px]">
               About Us
             </h2>
-            <p className="text-[16px] text-[#0C0C0C] my-5 max-w-[445px] leading-[24px] tracking-[0%]">
+            <p className="text-[16px] 2xl:text-[22px] 3xl:text-[28px] 4xl:text-[32px] text-[#0C0C0C] my-5 max-w-[445px] 2xl:max-w-[600px] 3xl:max-w-[650px] 4xl:max-w-[850px] leading-[24px] 2xl:leading-[28px] 3xl:leading-[32px] 4xl:leading-[38px] tracking-[0%]">
               DNIL is an ICT consultancy practice committed to delivering
               efficient, scalable, and secure technology solutions. We work
               closely with clients to understand their operational needs and
@@ -36,7 +36,7 @@ export default function AboutUs() {
               integrity, and quality guide every project we deliver.
             </p>
 
-            <button className="bg-[#0A0045] px-8 py-2 text-white  rounded-[20px] text-[16px] flex item-center w-fit">
+            <button className="bg-[#0A0045] px-8 py-2 text-white  rounded-[20px] text-[16px] 2xl:text-[20px] 3xl:text-[24px] 4xl:text-[28px] flex item-center w-fit">
               <Link
                 href="/about-us"
                 className="flex items-center justify-center"
@@ -59,7 +59,7 @@ export default function AboutUs() {
             </button>
           </div>
 
-          <div className="relative mt-[10px] md:mt-0 h-80 md:h-96">
+          <div className="relative mt-[10px] md:mt-0 h-80 md:h-96 2xl:h-[28rem] 3xl:h-[32rem] 4xl:h-[36rem]">
             <Image
               src="/about.jpg"
               alt="Team members"
