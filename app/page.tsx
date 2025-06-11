@@ -1,6 +1,6 @@
 import Navbar from "@/components/global/navbar";
 import Hero from "@/components/global/hero";
-import IndustryNews from "@/components/home/industry-news";
+// import IndustryNews from "@/components/home/industry-news";
 import AboutUs from "@/components/home/about-us";
 import ProductsSolutions from "@/components/home/product-solutions";
 import CoreValues from "@/components/home/core-values";

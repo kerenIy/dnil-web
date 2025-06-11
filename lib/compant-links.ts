@@ -136,11 +136,11 @@ export const corporateLinks = [
     image: "/about-organization.png",
     link: "/case-studies/euracare",
   },
-  {
-    title: "Industry Verticals",
-    image: "/about-directory.png",
-    link: "/about-us/directory",
-  },
+  // {
+  //   title: "Industry Verticals",
+  //   image: "/about-directory.png",
+  //   link: "/about-us/directory",
+  // },
   {
     title: "Ankur Global",
     image: "/about-group.png",

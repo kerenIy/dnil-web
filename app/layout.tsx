@@ -31,8 +31,9 @@ export default function RootLayout({
         <Script
           strategy="lazyOnload"
           src="https://chatbot.ankursolutions.com/widget.js"
-          data-name="DNILBot"
-          data-token="gAAAAABoNXl6Ptb78SFMAdRohLEgRFHVAINWHWhfLsT1Qwbe7xyzC4YoidSS1uBiIROEGR5c3-wxcz3gPXFj64UtAEmui-EoM2RmftWJ3N4O1QS_2BXFB4c=--gAAAAABoNXl6_e1dbd5gSc9uiiX58wHjOwcdPCllE_rnGXTjF8qc2YoJtGLhSqHSs0XeIW7-16txbMPjeYcFcriE00g4RYH9-Q==--gAAAAABoNXl6eG8S7_V1oXnHD4B_aJFdhXwKgZzlWLhf9vSgJMCTaZMBXzrD7HkQ6dJ-zA0N-_cXxK5X1dr67LDWprtQz5hfZPyrrHf0AUuONsA0vZOnkC8="
+          data-id="11"
+          data-name="DNILBOT"
+          data-token="gAAAAABoSXP4vh3g-QhrQs4hAyTmn-0-MbAbaoMQViWxlTWzz6xdYgDLEhSBpOZf48mUP5jzFFk9ZpFGCJfAdI6SggmkR8l4ftEj8vr1PKTkPw9yGBNBf2o=--gAAAAABoSXP48o_rQ8b4NsCp1kK2KO1eZrzduSK85WoBopKQHzDLMXMdEjvcU-u1B4TwTs9EcrLrYrbotHY7VHaKPn6TXUrYfg==--gAAAAABoSXP4YSNn7OH6njfEyMTctuNwk07965w590A2pKMt-Jf1ZX3fyhV_QKad7Czhnma7hhUX8B3NPF8_HLgp8Q0omgwdkHjZj0HuVF1xWodM6eh0JcY="
           data-icon=""
           data-color=""
         />
