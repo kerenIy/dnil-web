@@ -27,6 +27,10 @@ export default function IndustriesServed() {
               className="w-full p-1.5 md:p-3 border-[#0a0045a0] border-2 rounded-[10px] md:rounded-[20px] lg:rounded-[40px] text-[#0C0C0C] text-[16px] leading-[24px] tracking-[0%] placeholder:text-[#0A0045] placeholder:opacity-50 outline-none"
             />
 
+            <button className="bg-[#1C165F] px-3 py-2 rounded-[10px] md:rounded-[20px] lg:rounded-[40px] text-white  text-[16px] leading-[24px] tracking-[0%] absolute right-[30px] bottom-[30.5px]">
+              Subscribe
+            </button>
+
             <br />
             <div className="absolute bottom-0 left-0 z-[-1]">
               <div

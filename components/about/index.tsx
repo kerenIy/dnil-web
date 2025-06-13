@@ -29,7 +29,7 @@ export default function Page() {
 
           <div className="relative w-full max-w-4xl mx-auto mb-12 rounded-lg overflow-hidden">
             <Image
-              src="/about-yt.png"
+              src="/about-yt.jpeg"
               alt="DNIL corporate video"
               width={700}
               height={400}

@@ -19,7 +19,7 @@ export default function Page() {
         value: `Today, LSETF operates a fully digitized system for its day-to-day activities, enabling efficient data management and service delivery. This digital infrastructure has empowered thousands of businesses and individuals in Lagos State, helping them access funding, grow sustainably, and achieve financial independence.`,
       }}
       tabImage={{
-        need: `/case-studies/euracare.png`,
+        need: `/case-studies/lseft4.jpg`,
         solution: `/case-studies/lseft2.png`,
         value: `/case-studies/lseft3.png`,
       }}

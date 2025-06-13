@@ -1,25 +1,23 @@
-import Link from "next/link";
+// import Link from "next/link";
 
 const notices = [
   {
     id: 1,
-    date: "Jan 15, 2023",
-    title:
-      "A Note of Caution about Fraudulent Job Recruitment emails posing as DNIL",
-    link: "#",
+    date: "Jun 13, 2025",
+    title: "DNIL Website is offically launched!",
+    // link: "#",
   },
   {
     id: 2,
-    date: "Sep 27, 2022",
-    title: "A Note of Caution about Fraudulent Job Recruitment",
-    link: "#",
+    date: "Jun 11, 2025",
+    title: "DNIL will be observing Democracy day on Thursday, 12th June.",
   },
 ];
 
 export default function ImportantNotices() {
   return (
     <section className="py-16 container mx-auto px-4">
-      <h2 className="font-bold text-[#0C0C0C] text-[32px] leading-[40px] tracking-[0%]">
+      <h2 className="font-bold text-[#0C0C0C] text-[32px] leading-[40px] tracking-[0%] mb-2">
         Important Notices
       </h2>
 
@@ -33,7 +31,7 @@ export default function ImportantNotices() {
                   {notice.title}
                 </h3>
               </div>
-              <Link
+              {/* <Link
                 href={notice.link}
                 className="text-[#fff] flex-shrink-0 bg-[#0C0C0C] p-[3px] rounded-[4px]"
               >
@@ -51,13 +49,13 @@ export default function ImportantNotices() {
                     d="M8.25 4.5l7.5 7.5-7.5 7.5"
                   />
                 </svg>
-              </Link>
+              </Link> */}
             </div>
           </div>
         ))}
       </div>
 
-      <div className="flex justify-center mt-8">
+      {/* <div className="flex justify-center mt-8">
         <Link
           href="/services#newsletter"
           className="border-[#0A0045] border-[2px] rounded-[20px] text-[#0A0045] px-6 py-2 flex items-center justify-center"
@@ -78,7 +76,7 @@ export default function ImportantNotices() {
             />
           </svg>
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 }

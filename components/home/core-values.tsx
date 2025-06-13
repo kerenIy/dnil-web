@@ -20,7 +20,7 @@ export default function CoreValues() {
         height={480}
         className="inline md:hidden"
       />
-      <section className="mt-10 md:mt-0 md:absolute md:bottom-[120px] left-[80px]">
+      <section className="mt-10 md:mt-0 md:absolute md:bottom-[120px] left-[40px]">
         <div className="container mx-auto px-[10%]">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6 text-[#0C0C0C]">
             <div className="bg-white border-[#B3B3B3] border md:h-[240px] p-3 md:p-6 rounded-md md:rounded-lg shadow-sm">

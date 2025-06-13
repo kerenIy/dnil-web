@@ -4,47 +4,36 @@ import Link from "next/link";
 const jobCategories = [
   {
     title: "Project/Program Management",
-    jobs: 215,
   },
   {
     title: "Engineering & Science",
-    jobs: 1565,
   },
   {
     title: "Sales, Marketing & Product Management",
-    jobs: 209,
   },
   {
     title: "Finance",
-    jobs: 119,
   },
   {
     title: "IT, Telecom & Internet",
-    jobs: 1136,
   },
   {
     title: "Production & Skilled Trades",
-    jobs: 252,
   },
   {
     title: "Supply Chain",
-    jobs: 9,
   },
   {
     title: "Administration & Facilities",
-    jobs: 166,
   },
   {
     title: "Human Resources",
-    jobs: 117,
   },
   {
     title: "Customer Service & Contact Center Operations",
-    jobs: 255,
   },
   {
     title: "Browse Opportunities",
-    jobs: null,
   },
 ];
 
@@ -145,22 +134,13 @@ export default function SearchJobs() {
             {jobCategories.map((category, index) => (
               <Link
                 key={index}
-                href={
-                  category.jobs
-                    ? `/careers/search-jobs/${category.title
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")}`
-                    : "/careers/browse"
-                }
+                href={`/careers/search-jobs/browse-opportunities`}
                 className="bg-[#8c8c8c] hover:bg-[#737373] transition-colors p-6 flex flex-col justify-center items-center text-center text-white h-[180px]"
                 data-aos="flip-up"
                 data-aos-once="false"
                 data-aos-delay="200"
               >
                 <h3 className="font-medium mb-2">{category.title}</h3>
-                {category.jobs && (
-                  <p className="text-sm">{category.jobs} available jobs</p>
-                )}
               </Link>
             ))}
           </div>

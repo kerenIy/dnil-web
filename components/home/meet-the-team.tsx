@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function MeetTeam() {
   return (
-    <section className="py-16 container mx-auto px-[10%]">
+    <section className="pt-16 pb-[14rem] container mx-auto px-[10%]">
       <div className="relative flex justify-start items-start mt-[10%] h-80">
         <Image
           src="/top-team.jpg"

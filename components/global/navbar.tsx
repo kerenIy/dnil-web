@@ -15,11 +15,6 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white">
-      <div className="text-black font-bold text-[28px] mx-4">
-        <p className="hidden 3xl:inline 4xl:hidden">3xl</p>
-        <p className="hidden 2xl:inline 3xl:hidden">2xl</p>
-        <p className="hidden 4xl:inline">4xl</p>
-      </div>
       <div>
         <div className="flex justify-between items-center mx-[5%] md:mx-[10%] 2xl:mx-[5%] py-2 text-black font-normal text-[15px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[22px] 4xl:text-[27px] leading-[24.41px]">
           <div className="flex justify-between items-center">
